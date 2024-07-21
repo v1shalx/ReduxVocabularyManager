@@ -1,0 +1,110 @@
+/* VocabularyList.css */
+
+.vocabulary-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.vocabulary-list p {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.vocabulary-item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+
+.vocabulary-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.vocabulary-item h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.vocabulary-item p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.vocabulary-item button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.95rem;
+    margin: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vocabulary-item button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.vocabulary-item button:nth-of-type(2) {
+    background-color: #28a745;
+}
+
+.vocabulary-item button:nth-of-type(2):hover {
+    background-color: #1e7e34;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vocabulary-item {
+        width: 90%;
+    }
+
+    .vocabulary-item h3 {
+        font-size: 1.4rem;
+    }
+
+    .vocabulary-item p {
+        font-size: 1rem;
+    }
+
+    .vocabulary-item button {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vocabulary-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .vocabulary-item p {
+        font-size: 0.9rem;
+    }
+
+    .vocabulary-item button {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+}
